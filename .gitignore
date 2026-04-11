@@ -227,3 +227,6 @@ vector_store/
 
 # RAG Tests
 tests.jsonl
+
+# Test
+curate.ipynb
