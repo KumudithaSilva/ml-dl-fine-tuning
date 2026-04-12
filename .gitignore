@@ -230,3 +230,6 @@ tests.jsonl
 
 # Test
 llm_engineering
+
+# Dataset
+amazon_appliances_dataset
