@@ -229,7 +229,7 @@ vector_store/
 tests.jsonl
 
 # Test
-llm_engineering
+z_llm_engineering
 
 # Dataset
 amazon_appliances_dataset
