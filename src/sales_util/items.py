@@ -19,7 +19,8 @@ class Item(BaseModel):
     release_month: Optional[int] = None 
     release_day: Optional[int] = None 
     small_description: Optional[str] = None 
-    estimatedOwners: Optional[int] = None 
+    min_estimatedOwners: Optional[int] = None 
+    max_estimatedOwners: Optional[int] = None 
     supported_languages: Optional[int] = None 
     num_developers: Optional[int] = None 
     num_publishers: Optional[int] = None 
