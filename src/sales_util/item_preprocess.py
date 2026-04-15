@@ -9,7 +9,7 @@ def clean_item(item: Item) -> Optional[Item]:
         return None
     
     # Remove extreme price outliers
-    if item.price > 2:
+    if item.price > 50:
         return None
 
     # Remove review games
