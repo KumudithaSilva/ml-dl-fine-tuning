@@ -7,7 +7,6 @@ def clean_item(item: Item,  seen_names: set) -> Optional[Item]:
     # Remove duplicates
     if item.name in seen_names:
         return None
-    seen_names.add(item.name)
 
     # Remove invalid price
     if item.price is None or item.price < 0:
@@ -28,5 +27,6 @@ def clean_item(item: Item,  seen_names: set) -> Optional[Item]:
     item.negative = min(item.negative, 10_000)
 
     item.price = round(item.price, 2)
+    seen_names.add(item.name)
 
     return item
