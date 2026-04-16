@@ -1,5 +1,5 @@
 from typing import Dict
-from sales_util.items import Item
+from sales_util.items_data import Item
 
 MAX_TEXT_EACH = 500
 

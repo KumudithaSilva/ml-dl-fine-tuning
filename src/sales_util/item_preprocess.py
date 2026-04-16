@@ -1,5 +1,5 @@
 from typing import Optional
-from sales_util.items import Item
+from sales_util.items_data import Item
 
 
 def clean_item(item: Item,  seen_names: set) -> Optional[Item]:
