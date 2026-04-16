@@ -2,14 +2,19 @@ from typing import Optional
 from sales_util.items import Item
 
 
-def clean_item(item: Item) -> Optional[Item]:
+def clean_item(item: Item,  seen_names: set) -> Optional[Item]:
     
+    # Remove duplicates
+    if item.name in seen_names:
+        return None
+    seen_names.add(item.name)
+
     # Remove invalid price
     if item.price is None or item.price < 0:
         return None
     
-    # Remove extreme price outliers
-    if item.price > 50:
+    # Remove extreme price outliers and zero dollar prices
+    if item.price > 50 or item.price == 0:
         return None
 
     # Remove review games
