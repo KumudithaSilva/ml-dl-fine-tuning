@@ -70,6 +70,7 @@ def parse(datapoint):
     """
     try:
         return Item(
+            id=int(datapoint["appID"]),
             name=str(datapoint["name"]),
             peakCCU=int(datapoint["peak_ccu"]),
             required_age=int(datapoint["required_age"]),

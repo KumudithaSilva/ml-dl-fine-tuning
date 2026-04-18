@@ -5,6 +5,7 @@ from typing import Optional, Self
 
 
 class Item(BaseModel):
+    id: int
     name: str 
     peakCCU: int 
     required_age: int 
