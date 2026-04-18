@@ -232,5 +232,4 @@ tests.jsonl
 z_llm_engineering
 
 # Dataset
-amazon_appliances_dataset
-steam-games-dataset
+data
